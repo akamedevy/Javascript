@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto JS</title>
-    <script defer src="./js/parent.js"></script>
+    <script defer src="./js/validaform.js"></script>
 </head>
 <body>
     <h1 id="titulo">Hello World!</h1>
@@ -13,12 +13,18 @@
         <h1>OI</h1>
     </div>
 
-    <div>
+    <div id="container">
         <form id="formulario">
-            <input type="text" name="nome" id="nome" value="joao1234">
-            <input type="text" name="email" id="email" value="joaozixprogamer@gmail.com">
-            <input type="submit" value="botao" id="botao" name="botao">
+            <input class="input" type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="text" name="email" id="email" placeholder="email">
+            <input type="text" name="fone" id="fone" placeholder="(67) 99999999">
+            <input type="text" name="cpf" id="cpf" placeholder="Digite seu cpf">
+            <input type="password" name="senha" id="senha" placeholder="senha">
+            <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar" onclick="cadastrou()">
+            <input type="reset" value="resetar" id="resetar" name="resetar" >
+
         </form>
+        <button id="botao2">clique 2x</button>
     </div>
 </body>
 </html>
