@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa Thiago</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="formulario">
+        <input type="text" id="input_nome" placeholder="Nome: " required>
+        <p class="hidden" id="nome_erro">O nome precisa de minimo 4 caractéres</p>
+
+        <input type="email" id="input_email" placeholder="Email: " required>
+
+        <input type="email" id="input_confirmar" placeholder="Confirmar Email: " required>
+        <p class="hidden" id="email_erro">Os emails inseridos são diferentes</p>
+
+        <input type="password" id="input_senha" placeholder="Senha: " required>
+        <p class="hidden" id="senha_erro">A senha necessita ter no minimo 8 caractéres<br> um numero e uma letra maiuscula</p>
+
+        <input type="text" id="input_telefone" placeholder="(67) 999999999 " required>
+        <input type="text" id="input_cpf" placeholder="CPF: " required>
+        
+        <input type="submit" id="cadastrar" value="Cadastrar">
+        <input type="reset" id="resetar" value="Resetar">
+    </form>
+</body>
+</html>
